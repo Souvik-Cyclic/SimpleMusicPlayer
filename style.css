@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c1c;
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.btn {
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+}
+.btn:hover {
+    color: rgb(0, 255, 106);
+}
+.playing {
+    text-align: center;
+}
+img{
+    width: 140px;
+    border-radius: 50%;
+    height: 130px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+}
+
+.weather-forecast {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.weather-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('weather-icon.png');
+    background-size: cover;
+    margin-right: 10px;
+}
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+.temperature {
+    font-weight: bold;
+}
+.location {
+    color: #888;
+}
+
+body,h2,span, .button{
+  font-weight: bold;
+}

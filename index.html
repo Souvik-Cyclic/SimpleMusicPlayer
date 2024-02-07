@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./weather.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Souvik's Music Player</title>
+  </head>
+  <body>
+    <div class="weather-forecast">
+      <div class="weather-icon"></div>
+      <div class="weather-info">
+          <span class="temperature"></span>
+          <span class="location"></span>
+      </div>
+    </div>
+    <h2 class="playing">Now playing : <span class="song-name"></span></h2>
+    <div class="image">
+        <img src="https://1.bp.blogspot.com/-rtBmzwKIitU/Xz5N8fvgoOI/AAAAAAAACsM/YMXVuBuubysEuHJZVtgxr23zSrK67nM8gCLcBGAsYHQ/s1600/Art.jpg" alt="image">
+    </div>
+    <div class="volume">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume">
+    </div>
+    <div class="controls">
+      <button class="btn previous"><i class="ph-bold ph-skip-back"></i></button>
+      <button class="btn play-pause">
+        <i id="play-pause-icon" class="ph-bold ph-play"></i>
+      </button>
+      <button class="btn next"><i class="ph-bold ph-skip-forward"></i></button>
+    </div>
+  </body>
+</html>
