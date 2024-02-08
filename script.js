@@ -3,6 +3,7 @@ const boloAudio = new Audio('./sound/bolo.mp3');
 const husnAudio = new Audio('./sound/husn.mp3');
 const pehleAudio = new Audio('./sound/pehle.mp3');
 const satAudio = new Audio('./sound/sat.mp3');
+const winAudio = new Audio('./sound/win.mp3');
 
 const prevBtn = document.querySelector('.previous');
 const playBtn = document.querySelector('.play-pause');
@@ -11,6 +12,7 @@ const songName = document.querySelector('.song-name');
 const playPauseIcon = document.querySelector('#play-pause-icon');
 
 const songs = [
+  { ele: winAudio, audioName: 'Winter Ayun Waliye by Arjuna Harjai'},
   { ele: alagAudio, audioName: 'Alag Aaasmaan by Anuv Jain' },
   { ele: boloAudio, audioName: 'Bolo Na from 12th Fail' },
   { ele: husnAudio, audioName: 'Husn by Anuv Jain' },
@@ -112,22 +114,25 @@ function playSong(index) {
   const imageElement = document.querySelector('.image img');
   switch (current) {
     case 0:
-      imageElement.src = 'https://1.bp.blogspot.com/-rtBmzwKIitU/Xz5N8fvgoOI/AAAAAAAACsM/YMXVuBuubysEuHJZVtgxr23zSrK67nM8gCLcBGAsYHQ/s1600/Art.jpg';
+      imageElement.src = 'https://c.saavncdn.com/889/Winter-Ayun-Waliye-Punjabi-2024-20240119070828-500x500.jpg';
       break;
     case 1:
-      imageElement.src = 'https://th.bing.com/th/id/OIP.LFnMSKZpyYqz9sbsjEHrxgHCFn?rs=1&pid=ImgDetMain';
+      imageElement.src = 'https://1.bp.blogspot.com/-rtBmzwKIitU/Xz5N8fvgoOI/AAAAAAAACsM/YMXVuBuubysEuHJZVtgxr23zSrK67nM8gCLcBGAsYHQ/s1600/Art.jpg';
       break;
     case 2:
-      imageElement.src = 'https://cdn.telanganatoday.com/wp-content/uploads/2023/12/Husn.png';
+      imageElement.src = 'https://th.bing.com/th/id/OIP.LFnMSKZpyYqz9sbsjEHrxgHCFn?rs=1&pid=ImgDetMain';
       break;
     case 3:
-      imageElement.src = 'https://www.filmibeat.com/ph-big/2023/01/animal-2023_167264941510.jpg';
+      imageElement.src = 'https://cdn.telanganatoday.com/wp-content/uploads/2023/12/Husn.png';
       break;
     case 4:
+      imageElement.src = 'https://www.filmibeat.com/ph-big/2023/01/animal-2023_167264941510.jpg';
+      break;
+    case 5:
       imageElement.src = 'https://cdn.tollywood.net/wp-content/uploads/2023/10/Animal-movie-lengthy-with-2-intervals-jpg.webp';
       break;
     default:
-      imageElement.src = 'https://1.bp.blogspot.com/-rtBmzwKIitU/Xz5N8fvgoOI/AAAAAAAACsM/YMXVuBuubysEuHJZVtgxr23zSrK67nM8gCLcBGAsYHQ/s1600/Art.jpg';
+      imageElement.src = 'https://c.saavncdn.com/889/Winter-Ayun-Waliye-Punjabi-2024-20240119070828-500x500.jpg';
   }
 
   currentSong.play();
